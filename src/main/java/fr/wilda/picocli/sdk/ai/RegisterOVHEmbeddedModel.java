@@ -13,8 +13,8 @@ public class RegisterOVHEmbeddedModel {
         return OvhAiEmbeddingModel.builder()
                 .baseUrl(ConfigProvider.getConfig().getValue("ovhcloud.ai-endpoints.embedding.base-url", String.class))
                 .apiKey(ConfigProvider.getConfig().getValue("ovhcloud.ai-endpoints.token", String.class))
-                .logRequests(false)
-                .logResponses(false)
+                .logRequests(true)
+                .logResponses(true)
                 .build();
     }
 }
